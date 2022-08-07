@@ -13,6 +13,7 @@ function fadeIn(element, duration = 600) {
 }
 
 new fullpage('#fullpage', {
+    resize: true,
     afterLoad: function (origin, destination, direction, trigger) {
         if (destination.index == 2) {
             setTimeout(function () {
@@ -30,4 +31,8 @@ new fullpage('#fullpage', {
 new Swiper(".lalaland_swiper", {
     effect: "cards",
     grabCursor: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
 });
