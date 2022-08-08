@@ -14,6 +14,7 @@ function fadeIn(element, duration = 600) {
 
 new fullpage('#fullpage', {
     resize: true,
+    credits: { enabled: false },
     afterLoad: function (origin, destination, direction, trigger) {
         if (destination.index == 2) {
             setTimeout(function () {
